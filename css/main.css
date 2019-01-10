@@ -384,3 +384,198 @@ ul {
 .footer a {
     color: coral;
 }
+
+
+@media screen and (max-width: 900px) {
+.head>.left{
+    display: none;
+}
+
+.head>.right {
+    background: url(../img/head-mobile.jpg);
+    background-size: cover;
+    padding: 0 10px;
+}
+
+.menu{
+    width: 100%;
+    font-size: 11px;
+    padding: 25px 0;
+    bottom: 0;
+    right: auto;
+    text-align: center;
+    overflow: hidden;
+    clip-path: none;
+}
+
+.menu>a::before{
+    top:-500%;
+}
+
+.about {
+    padding: 0;
+}
+
+.about>p {
+    padding: 10px;
+    text-align: center !important;
+    margin: 42px !important;
+}
+
+.cv {
+    padding: 30px;
+}
+
+.cv::before {
+    top: 70%;
+    left: -330%;
+}
+
+.contacts {
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+}
+.contacts span{
+    padding: 10px;
+}
+
+.header {
+    height: 25vw !important;
+}
+
+.research>ul {
+    display: block;
+}
+
+.research img {
+    margin: 30px 0 0 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.research>.content>p{
+    padding: 20px;
+    width: 100%;
+}
+
+.skills {
+    padding: 10px;
+}
+
+.skills>p {
+    padding: 20px;
+}
+
+.skillset>div {
+    width: 40%;
+    height: 55px;
+}
+
+.skillset>div>.prog {
+    height: 10%;
+}
+
+.awards {
+    padding-top: 70px;
+}
+
+.honor {
+    font-size: 15px;
+}
+
+.honor>img {
+    padding-top: 0 !important;
+    margin: 10px;
+}
+
+html > body > article:nth-of-type(5) > .header {
+    height: 40vw !important;
+    text-align: center;
+}
+
+.publications {
+    padding:0;
+}
+
+.publications ul{
+    margin-top:35px
+}
+
+.publications li {
+    padding: 0
+}
+
+.extras {
+    padding: 30px;
+}
+
+.extras p {
+    text-align: center;
+}
+
+.footer span {
+    padding: 10px;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+.head>.left{
+    display: none;
+}
+
+.head>.right {
+    background: url(../img/head-mobile.jpg);
+    background-size: cover;
+    padding: 0 10px;
+}
+
+.menu{
+    width: 100%;
+    font-size: 11px;
+    padding: 25px 0;
+    bottom: 0;
+    right: auto;
+    text-align: center;
+    overflow: hidden;
+    clip-path: none;
+}
+
+.menu>a::before{
+    top:-500%;
+}
+
+.research {
+    text-align: center;
+}
+
+.research img {
+    margin: 30px auto !important;
+    padding: 0 !important;
+    width: 44% !important;
+}
+
+.research>.content>p{
+    padding: 20px;
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 2000px) {
+body {
+    font-size: 35px;
+}
+.menu {
+    width: 25%;
+}
+
+.research>p{
+    font-size: 45px;
+}
+
+.honor {
+    font-size: 45px;
+}
+}
