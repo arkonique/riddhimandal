@@ -62,7 +62,7 @@ ul {
     padding: 25px;
     bottom: 8%;
     background: white;
-    width: 35%;
+    width: 45%;
     clip-path: polygon(0 0,100% 0,100% 100%, 5% 100%);
     right: 0;
 }
@@ -71,14 +71,27 @@ ul {
     padding: 0 10px;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s,padding 0.1s ease-in;
+    position: relative;
 }
 
-.menu>a:hover {
-    padding: 3px 10px;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    color: coral
+
+.menu>a::before{
+    content: '';
+    position: absolute;
+    background: #e2e2e2af;
+    width: 100%;
+    height: 300%;
+    top: -400%;
+    left: -20%;
+    transform: skew(20deg);
+    transition: 0.1s;
 }
+
+.menu>a:hover::before {
+    top: -100%;
+    left: 0%;
+}
+
 
 .about,.skills,.research {
     text-align: center;
@@ -149,7 +162,8 @@ ul {
 }
 
 .contacts {
-    color: #ff7f50a1;
+    color: #ff7f50;
+    font-weight: bold;
 }
 
 .contacts span{
@@ -343,4 +357,30 @@ ul {
     text-align: center;
     margin: 0;
     color: #949494;
+}
+
+.extras li {
+    padding: 10px 0;
+}
+
+
+.cv::before{
+    content: '';
+    width: 500%;
+    height: 500%;
+    background: #e2e2e2a5;
+    position: absolute;
+    top:50%;
+    left: -300%;
+    transition: 1s;
+    transform: rotate(50deg);
+}
+
+.cv:hover::before {
+    left: 100%;
+    top: -500%;
+}
+
+.footer a {
+    color: coral;
 }
