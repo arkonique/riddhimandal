@@ -2,12 +2,17 @@ body{
     margin: 0;
     overflow-x: hidden;
     background: #424242;
+    color: #5f5f5d;
     font-family: 'Montserrat', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: #444444
+}
+
+ul {
+    margin: 0;
 }
 
 .head{
@@ -75,10 +80,62 @@ a {
     color: coral
 }
 
-.about,.skills {
+.about,.skills,.research {
     text-align: center;
     color: #e2e2e2;
     padding:50px;
+}
+.about>h1,.skills>h1,.research h1,.extras>h1 {
+    font-size: 3rem;
+}
+
+.research {
+    padding: 0;
+}
+
+.research h1{
+    color: #424242;
+}
+
+.research>.header,.awards>.header,.publications>.header{
+    height: 10vw;
+    background: url(../img/Mountain-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research>p{
+    margin-top:50px;
+    font-size:20px;
+    color: coral;
+}
+
+.research>ul{
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: circle;
+}
+
+.research>.content {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.research>.content>img {
+    width: 20%;
+    height: 50%;
+    margin: 65px;
+}
+
+.research>.content>p{
+    text-align: left;
+    padding: 10px 70px;
+    width: 50%;
 }
 
 .skills {
@@ -86,9 +143,6 @@ a {
     color: #949494;
 }
 
-.about>h1,.skills>h1 {
-    font-size: 3rem;
-}
 
 .about>p,.skills>p {
     padding: 0 70px;
@@ -106,6 +160,7 @@ a {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-flow: wrap;
 }
 
 .skillset>div{
@@ -129,13 +184,163 @@ a {
 }
 
 .skillset>#bash>.prog::before{
-    width: 80%
+    width: 92%
 }
 
 .skillset>#matlab>.prog::before{
-    width: 90%
+    width: 95%
 }
 
 .skillset>#python>.prog::before{
+    width: 92%
+}
+
+.skillset>#cpp>.prog::before{
+    width: 85%
+}
+
+.skillset>#c>.prog::before{
+    width: 70%
+}
+
+.skillset>#csh>.prog::before{
+    width: 55%
+}
+
+.skillset>#fortran>.prog::before{
     width: 75%
+}
+
+.skillset>#perl>.prog::before{
+    width: 60%
+}
+
+.skillset>#r>.prog::before{
+    width: 50%
+}
+
+.skillset>#html>.prog::before{
+    width: 90%
+}
+
+.skillset>#css>.prog::before{
+    width: 90%
+}
+
+.skillset>#js>.prog::before{
+    width: 87%
+}
+
+.skillset>#sql>.prog::before{
+    width: 72%
+}
+
+.skillset>#php>.prog::before{
+    width: 68%
+}
+
+.skillset>#gmt>.prog::before{
+    width: 95%
+}
+.skillset>#sac>.prog::before{
+    width: 75%
+}
+
+.skillset>#latex>.prog::before{
+    width: 80%
+}
+
+.skillset>#gnuplot>.prog::before{
+    width: 60%
+}
+
+.skillset>#origin>.prog::before{
+    width: 55%
+}
+
+.skillset>#mt5>.prog::before{
+    width: 95%
+}
+.skillset>#ps>.prog::before{
+    width: 65%
+}
+
+.awards {
+    background: white;
+    paddinh: 100px 0;
+}
+
+.awards>.header {
+    background: url(../img/Earthquakes.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.awards>.header>h1 {
+    font-size: 3rem;
+}
+
+.honor {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.honor>img {
+    height: 80%;
+    margin: 0 50px;
+}
+
+.honor>span{
+    width: 45%;
+}
+
+.publications {
+    background: white;
+}
+
+.publications>.header {
+    background: url(../img/sunrise.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.publications>.header>h1 {
+    font-size: 3rem;
+}
+
+.me {
+    color: coral;
+    font-weight: bold;
+}
+
+.publications li{
+    padding: 70px;
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: wrap;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+    color: coral;
+    font-weight: bold;
+}
+
+.extras {
+    background: white;
+    padding: 70px;
+}
+
+.extras>h1 {
+    text-align: center;
+    margin: 0;
+    color: #949494;
 }
