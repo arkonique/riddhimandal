@@ -16,6 +16,8 @@ ul {
 }
 
 .head{
+    background: url(../img/head-mobile.jpg);
+    background-repeat: no-repeat;
     height: 80vh;
     display: flex;
     position: relative;
@@ -23,6 +25,7 @@ ul {
 
 .head>.left{
     height: 100%;
+    visibility: hidden;
 }
 
 .head>.left>img{
@@ -37,7 +40,8 @@ ul {
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    background: #292929;
+    background: linear-gradient(90deg,transparent,#292929,#292929);
+    /*background: #292929;*/
     color: white;
     font-family: sans-serif;
 }
