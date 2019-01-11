@@ -114,6 +114,9 @@ ul {
     height: 10vw;
     background: url(../img/Mountain-3.jpg);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
